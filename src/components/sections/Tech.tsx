@@ -32,7 +32,7 @@ const Tech = () => {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6 place-items-center">
           {[{
             title: 'РАБОТАЕМ', desc: 'со всеми компаниями и с каждым: b2b, b2g, b2c, b2b2c.', tone: 'card'
           },{
@@ -50,10 +50,10 @@ const Tech = () => {
               key={i}
               className={
                 c.tone === 'lime'
-                  ? 'rounded-3xl p-6 md:p-8 text-[hsl(var(--sidebar-primary-foreground))] bg-[hsl(var(--brand-lime))]'
+                  ? 'rounded-3xl p-6 md:p-8 text-[hsl(var(--sidebar-primary-foreground))] bg-[hsl(var(--brand-lime))] md:w-[386px] md:h-[296px]'
                   : c.tone === 'purple'
-                  ? 'rounded-3xl p-6 md:p-8 bg-[hsl(var(--brand-purple))] text-[hsl(var(--brand-purple-foreground))]'
-                  : 'card-surface p-6 md:p-8'
+                  ? 'rounded-3xl p-6 md:p-8 bg-[hsl(var(--brand-purple))] text-[hsl(var(--brand-purple-foreground))] md:w-[386px] md:h-[296px]'
+                  : 'card-surface p-6 md:p-8 md:w-[386px] md:h-[296px]'
               }
             >
               <h3 className="text-2xl font-extrabold mb-3">{c.title}</h3>

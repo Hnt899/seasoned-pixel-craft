@@ -18,8 +18,8 @@
 }
 
 :root {
-  --font-sans: InterVar, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+  --font-sans: Raleway, InterVar, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
     Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  --font-display: InterVar, ui-sans-serif, system-ui, -apple-system, Segoe UI,
+  --font-display: Unbounded, InterVar, ui-sans-serif, system-ui, -apple-system, Segoe UI,
     Roboto, Noto Sans, "Helvetica Neue", Arial;
 }
