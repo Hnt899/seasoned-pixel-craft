@@ -6,6 +6,7 @@ import Portfolio from "@/components/sections/Portfolio";
 import Team from "@/components/sections/Team";
 import FAQ from "@/components/sections/FAQ";
 import Blog from "@/components/sections/Blog";
+import CTA from "@/components/sections/CTA";
 
 const Index = () => {
   const orgLd = {
@@ -27,6 +28,7 @@ const Index = () => {
         <Team />
         <FAQ />
         <Blog />
+        <CTA />
       </main>
       <footer id="contacts" className="border-t border-border/60 py-10 text-center text-sm text-muted-foreground">
         <div className="container mx-auto">
