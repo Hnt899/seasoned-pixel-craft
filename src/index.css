@@ -3,94 +3,102 @@
 @tailwind utilities;
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+All colors MUST be HSL. */
+
+@import url('./styles/fonts.css');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 228 20% 6%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 228 20% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 228 20% 6%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 72 98% 55%; /* Neon Lime */
+    --primary-foreground: 240 6% 10%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 224 14% 18%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 224 14% 18%;
+    --muted-foreground: 216 12% 72%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 224 14% 18%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 18%;
+    --input: 220 13% 18%;
+    --ring: 210 40% 98%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Sidebar */
+    --sidebar-background: 228 20% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 72 98% 55%;
+    --sidebar-primary-foreground: 240 6% 10%;
+    --sidebar-accent: 224 14% 18%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 13% 18%;
+    --sidebar-ring: 210 40% 98%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Brand tokens */
+    --brand-lime: 72 98% 55%;
+    --brand-purple: 259 90% 65%;
+    --brand-purple-foreground: 210 40% 98%;
 
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Motion */
+    --transition-smooth: all 220ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 228 20% 6%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 228 20% 8%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 228 20% 6%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 72 98% 55%;
+    --primary-foreground: 240 6% 10%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 224 14% 18%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 224 14% 18%;
+    --muted-foreground: 216 12% 72%;
 
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 224 14% 18%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
+    --border: 220 13% 18%;
+    --input: 220 13% 18%;
+    --ring: 217.2 91.2% 59.8%;
+
+    --sidebar-background: 228 20% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 72 98% 55%;
+    --sidebar-primary-foreground: 240 6% 10%;
+    --sidebar-accent: 224 14% 18%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 13% 18%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --brand-lime: 72 98% 55%;
+    --brand-purple: 259 90% 65%;
+    --brand-purple-foreground: 210 40% 98%;
   }
 }
 
@@ -100,6 +108,34 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
   }
+}
+
+@layer components {
+  /* Ambient gradient used in hero and cards */
+  .bg-ambient {
+    background:
+      radial-gradient(1200px 600px at 10% 10%, hsl(var(--brand-lime) / 0.32), transparent 50%),
+      radial-gradient(800px 600px at 70% 60%, hsl(var(--brand-purple) / 0.30), transparent 55%),
+      radial-gradient(600px 400px at 90% 10%, hsl(var(--brand-lime) / 0.18), transparent 60%),
+      hsl(var(--background));
+  }
+  .card-surface {
+    @apply bg-card text-card-foreground rounded-3xl border border-border/60 shadow-sm;
+  }
+  .text-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+  }
+  .animate-float { animation: float 6s ease-in-out infinite; }
 }

@@ -9,20 +9,23 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground hover:bg-[hsl(var(--brand-purple))] hover:text-[hsl(var(--brand-purple-foreground))]",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-destructive text-destructive-foreground hover:bg-[hsl(var(--brand-purple))] hover:text-[hsl(var(--brand-purple-foreground))]",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border border-input bg-background hover:bg-[hsl(var(--brand-purple))] hover:text-[hsl(var(--brand-purple-foreground))]",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+          "bg-secondary text-secondary-foreground hover:bg-[hsl(var(--brand-purple))] hover:text-[hsl(var(--brand-purple-foreground))]",
+        ghost: "hover:bg-[hsl(var(--brand-purple))] hover:text-[hsl(var(--brand-purple-foreground))]",
+        link: "text-primary underline-offset-4 hover:text-[hsl(var(--brand-purple))]",
+        pill: "rounded-full bg-secondary text-secondary-foreground px-6 hover:bg-[hsl(var(--brand-purple))] hover:text-[hsl(var(--brand-purple-foreground))]",
+        cta: "rounded-full bg-primary text-primary-foreground shadow-lg shadow-[hsl(var(--brand-lime)/0.25)] px-6 hover:bg-[hsl(var(--brand-purple))]",
+        hero: "rounded-full bg-white/10 text-foreground border border-white/15 backdrop-blur px-8 hover:bg-[hsl(var(--brand-purple))] hover:text-[hsl(var(--brand-purple-foreground))]",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        lg: "h-12 rounded-md px-8 text-base",
         icon: "h-10 w-10",
       },
     },
