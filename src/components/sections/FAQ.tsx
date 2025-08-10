@@ -17,7 +17,7 @@ const FAQ = () => {
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((f, i) => (
             <AccordionItem key={i} value={`item-${i}`} className="border-none">
-              <AccordionTrigger className="rounded-full px-6 py-4 bg-[hsl(var(--popover-foreground))] text-background data-[state=open]:rounded-b-none">
+              <AccordionTrigger className="rounded-full px-6 py-4 bg-[hsl(var(--brand-lime))] text-[hsl(var(--sidebar-primary-foreground))] data-[state=open]:rounded-b-none">
                 {f.q}
               </AccordionTrigger>
               <AccordionContent className="rounded-b-3xl bg-muted p-6 text-base leading-relaxed">

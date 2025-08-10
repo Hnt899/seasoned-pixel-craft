@@ -23,25 +23,16 @@ const Index = () => {
       <main>
         <Hero />
         <Tech />
-        <Portfolio />
         <Offerings />
+        <Portfolio />
         <Team />
         <FAQ />
         <Blog />
         <CTA />
       </main>
-      <footer id="contacts" className="border-t border-border/60 py-10 text-sm text-muted-foreground">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <nav className="flex flex-wrap items-center gap-3">
-            <a href="#services" className="story-link">Услуги</a>
-            <a href="#team" className="story-link">О нас</a>
-            <a href="#portfolio" className="story-link">Портфолио</a>
-            <a href="#blog" className="story-link">Блог</a>
-            <a href="/privacy.pdf" download className="story-link">Политика конфиденциальности</a>
-          </nav>
-          <div className="text-center md:text-right">
-            © {new Date().getFullYear()} ЭйАй Тех • Все права защищены
-          </div>
+      <footer id="contacts" className="border-t border-border/60 py-10 text-center text-sm text-muted-foreground">
+        <div className="container mx-auto">
+          © {new Date().getFullYear()} ЭйАй Тех • Все права защищены
         </div>
       </footer>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }} />

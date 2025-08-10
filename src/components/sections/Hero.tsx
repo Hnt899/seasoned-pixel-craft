@@ -4,15 +4,8 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative overflow-hidden">
-      <img
-        src="/lovable-uploads/17bcb995-c9c0-423c-ae58-8daf92da869d.png"
-        alt="Фон главного экрана — ЭЙАЙ ТЕХ"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
-
-      <div className="relative container mx-auto pt-20 pb-24 md:pt-28 md:pb-32">
+    <section id="hero" className="relative bg-ambient overflow-hidden">
+      <div className="container mx-auto pt-20 pb-24 md:pt-28 md:pb-32">
         <p className="max-w-xl text-sm md:text-base text-muted-foreground/90 mb-6">
           Мы знаем, что такое нейросети и как их использовать для решения задач,
           которые стоят перед бизнесом.

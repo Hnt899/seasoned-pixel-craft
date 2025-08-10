@@ -18,7 +18,7 @@ All colors MUST be HSL. */
     --popover: 228 20% 6%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 68 99% 50%; /* Green DBFE01 */
+    --primary: 72 98% 55%; /* Neon Lime */
     --primary-foreground: 240 6% 10%;
 
     --secondary: 224 14% 18%;
@@ -42,7 +42,7 @@ All colors MUST be HSL. */
     /* Sidebar */
     --sidebar-background: 228 20% 6%;
     --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 68 99% 50%;
+    --sidebar-primary: 72 98% 55%;
     --sidebar-primary-foreground: 240 6% 10%;
     --sidebar-accent: 224 14% 18%;
     --sidebar-accent-foreground: 210 40% 98%;
@@ -50,8 +50,8 @@ All colors MUST be HSL. */
     --sidebar-ring: 210 40% 98%;
 
     /* Brand tokens */
-    --brand-lime: 68 99% 50%;
-    --brand-purple: 248 99% 62%;
+    --brand-lime: 72 98% 55%;
+    --brand-purple: 259 90% 65%;
     --brand-purple-foreground: 210 40% 98%;
 
     /* Motion */
@@ -68,7 +68,7 @@ All colors MUST be HSL. */
     --popover: 228 20% 6%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 68 99% 50%;
+    --primary: 72 98% 55%;
     --primary-foreground: 240 6% 10%;
 
     --secondary: 224 14% 18%;
@@ -89,15 +89,15 @@ All colors MUST be HSL. */
 
     --sidebar-background: 228 20% 6%;
     --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 68 99% 50%;
+    --sidebar-primary: 72 98% 55%;
     --sidebar-primary-foreground: 240 6% 10%;
     --sidebar-accent: 224 14% 18%;
     --sidebar-accent-foreground: 210 40% 98%;
     --sidebar-border: 220 13% 18%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    --brand-lime: 68 99% 50%;
-    --brand-purple: 248 99% 62%;
+    --brand-lime: 72 98% 55%;
+    --brand-purple: 259 90% 65%;
     --brand-purple-foreground: 210 40% 98%;
   }
 }
@@ -110,11 +110,6 @@ All colors MUST be HSL. */
   body {
     @apply bg-background text-foreground antialiased;
     font-family: var(--font-sans);
-  }
-
-  h1, h2, h3 {
-    font-family: var(--font-display);
-    font-weight: 800;
   }
 }
 
